@@ -1,0 +1,54 @@
+/* =====Components==== */
+:root {
+  --all-text-color: #2c2c2c;
+  --yellow-main: #ffe550;
+  --button-green: #bbf330;
+  --darck-green: #7eb101;
+
+  --shadow-fruit: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--all-text-color);
+}
+
+.h1-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  color: var(--all-text-color);
+}
+
+.h2-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  color: var(--all-text-color);
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1310px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
