@@ -17,6 +17,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--all-text-color);
+  background-color: #f5f5f5;
 }
 
 .h1-title {
@@ -45,15 +46,6 @@ body {
   text-decoration: none;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1310px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Offerings */
 .rectangle-in-container {
   background-color: var(--yellow-main);
 }
