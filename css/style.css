@@ -107,11 +107,23 @@ img {
   align-items: center;
 }
 
+
 .hero-photos {
   border-radius: 50%;
   width: 528px;
 }
-
+.photos-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 48px;
+  background-color: #FEFEFE;
+  border: transparent;
+}
+.photos-button-icon{
+  fill:  #2C2C2C;
+}
 .hero-title {
   margin-bottom: 28px;
 }
