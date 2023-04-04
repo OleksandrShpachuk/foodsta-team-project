@@ -87,6 +87,7 @@ img {
   display: flex;
   padding-left: 16px;
   padding-right: 14px;
+  padding-bottom: 0;
   justify-content: space-between;
   align-items: center;
   /* тимчасова рамка */
@@ -98,13 +99,18 @@ img {
   padding-bottom: 164px;
 }
 .hero-photos-wrap {
+  
   display: flex;
   width: 580px;
   height: 580px;
   background-image: url(../img/Ellipse\ 11.png);
   background-size: 100%;
+ 
+ 
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -113,16 +119,24 @@ img {
   width: 528px;
 }
 .photos-button{
+  
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 48px;
   background-color: #FEFEFE;
-  border: transparent;
+  border: none;
+  padding: 0;
+
+
 }
 .photos-button-icon{
+ 
   fill:  #2C2C2C;
+  margin: 0;
+ 
+
 }
 .hero-title {
   margin-bottom: 28px;
@@ -156,6 +170,7 @@ img {
 /* =======Offerings======= */
 .rectangle-in-container {
   background-color: var(--yellow-main);
+ 
 }
 .offerings-bl {
   display: flex;
