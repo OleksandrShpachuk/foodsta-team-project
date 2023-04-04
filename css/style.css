@@ -4,6 +4,7 @@
   --yellow-main: #ffe550;
   --button-green: #bbf330;
   --darck-green: #7eb101;
+  --white: #fefefe;
 
   --shadow-fruit: radial-gradient(
     50% 50% at 50% 50%,
@@ -50,7 +51,8 @@ body {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -78,10 +80,6 @@ img {
 
 /* ===========HERO=========== */
 
-.hero-section {
-  /* padding-top: 14px;
-    padding-bottom: 14px; */
-}
 .hero-container {
   /* width: 1248px; */
   display: flex;
@@ -139,6 +137,145 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background: #ffe450;
+}
+
+/* ========== FAVORITES ( Ruslan ) ========== */
+
+.section--favorites .container {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.section--favorites .subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.favorites {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.favorites__item .link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: var(--white);
+  box-sizing: border-box;
+  width: 100%;
+  transition: border var(--transition);
+  border-radius: 50%;
+}
+.favorites__item .link:hover,
+.favorites__item .link:focus {
+  border: 16px solid var(--button-green);
+}
+
+.favorites__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*========== FAVORITES ( Ruslan ) RESPONSIVE ==========*/
+
+/*----- FROM 0 TO TABLET*/
+@media screen and (max-width: 767px) {
+  .section--favorites {
+    padding: 60px 0px;
+  }
+  .favorites {
+    max-width: 280px;
+    margin: -10px auto;
+  }
+  .favorites__item {
+    width: 100%;
+    margin: 10px auto;
+    display: none;
+  }
+  .favorites__item:nth-child(1),
+  .favorites__item:nth-child(2),
+  .favorites__item:nth-child(3) {
+    display: block;
+  }
+  .favorites__item .link {
+    padding: 18px;
+    border: 11px solid var(--yellow-main);
+  }
+  .favorites__item .link:hover,
+  .favorites__item .link:focus {
+    border: 11px solid var(--button-green);
+  }
+}
+
+/*----- FROM TABLET TO DESCTOP*/
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .favorites {
+    max-width: 704px;
+  }
+  .favorites__item {
+    width: calc((100% - 32px) / 2);
+  }
+  .favorites__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .favorites__item .link {
+    padding: 20px;
+    border: 14px solid var(--yellow-main);
+  }
+  .favorites__item .link:hover,
+  .favorites__item .link:focus {
+    border: 14px solid var(--button-green);
+  }
+}
+
+/*----- FROM TABLET TO INFINITY*/
+@media screen and (min-width: 768px) {
+  .section--favorites {
+    padding: 100px 0px;
+  }
+  .favorites {
+    margin: -16px auto;
+  }
+  .favorites__item {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 32px;
+  }
+}
+
+/*----- FROM 0 TO DESCTOP*/
+@media screen and (max-width: 1279px) {
+  .section--favorites .subtitle {
+    margin-bottom: 60px;
+  }
+}
+
+/*----- FROM DESCTOP TO INFINITY*/
+@media screen and (min-width: 1280px) {
+  .section--favorites .subtitle {
+    margin-bottom: 40px;
+  }
+  .favorites__item {
+    width: calc((100% - 32px * 2) / 3);
+  }
+  .favorites__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .favorites__item .link {
+    padding: 24px;
+    border: 16px solid var(--yellow-main);
+  }
+  .favorites__item .link:hover,
+  .favorites__item .link:focus {
+    border: 16px solid var(--button-green);
+  }
 }
 
 /* =======Offerings======= */
