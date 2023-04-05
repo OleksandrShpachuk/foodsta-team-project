@@ -104,7 +104,6 @@ img {
   background-image: url(../img/Ellipse\ 11.png);
   background-size: 100%;
  
- 
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -137,21 +136,18 @@ left: 6px;
   border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: transform var(--transition) ;
 }
 
 .photos-button:hover .photos-button-icon,
 .photos-button:focus .photos-button-icon{
   transform: scale(1.5);
-
 }
 
 .photos-button-icon{
   fill:  #2C2C2C;
   margin: 0;
   min-width: 30px;
- 
-
 }
 .hero-title {
   margin-bottom: 28px;
@@ -175,7 +171,7 @@ left: 6px;
   cursor: pointer;
   border: transparent;
   border-radius: 30px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: background-color var(--transition) ;
 }
 
 .hero-button:hover,
