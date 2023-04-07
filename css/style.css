@@ -75,6 +75,75 @@ img {
 }
 
 /* =======Components end======== */
+/*===========HEADER============*/
+.header {
+  background: #fefefe;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+.header-container {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+.logo {
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+}
+.header-container {
+  align-items: center;
+  display: flex;
+}
+
+.header-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #2c2c2c;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.header-link:hover,
+.header-link:focus {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-decoration-line: underline;
+  color: #bbf330;
+}
+
+.header-list {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+}
+.header-button {
+  display: flex;
+  min-width: 98px;
+  min-height: 32px;
+  padding: 6px 18px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--all-text-color);
+  background-color: var(--button-green);
+  cursor: pointer;
+  border: transparent;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+.header-button:hover,
+.header-button:focus {
+  background: #ffe450;
+  transition: var(--transition);
+}
 
 /* ===========HERO=========== */
 
