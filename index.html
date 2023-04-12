@@ -272,9 +272,42 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal"><button type="button" class="modal-close-btn" data-modal-close>
         <svg class="modal-close-btn-icon" width="24" height="24">
-          <use href="./img/close.svg"></use>
+          <use href="./img/close-modal-window.svg"></use>
         </svg>
-      </button></div>
+      </button>
+      <div class="modal-container">
+      <p class="form-title">Order Form</p>
+      <form action="" class="form-modal">
+        <label for="user-name"><p class="form-text">Name</p> 
+        <input
+         class="input-field"
+         type="text"
+         name="user-name"
+         id="user-name"
+         placeholder="Your name"
+         required minlength="3"
+         ></label>
+        <label for="user-phone"><p class="form-text">Phone number</p>
+        <input type="tel"
+        name="user-phone"
+        id="user-phone"
+        class="input-field"
+        placeholder="+38(0_ _) _ _ _   _ _   _ _"
+        required minlength="3"
+        ></label>
+        <label for="user-email"><p class="form-text">E-mail</p>
+        <input type="email"
+        name="user-email"
+        id="user-email"
+        class="input-field"
+        placeholder="example@gmail.com"
+        required
+        ></label><div class="container-button">
+        <button type="submit" class="button-send">
+          <p class="button-send-text">Send</p></button></div>
+      </form>
+      </div>
+    </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
