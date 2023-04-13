@@ -19,38 +19,35 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
-
-  <body>
-    <!-- Header Ira-->
-    <header class="header">
-      <div class="container header-container">
-        <a class="logo" href=""
-          ><img src="./img/Vector.svg" alt="logo" width="66" height="52"
-        /></a>
-        <nav class="header-navigation">
-          <ul class="header-list list">
-            <li class="header-item header-flex">
-              <a class="header-link current-page link" href="">Home</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="">About</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Service</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Menu</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header-button" type="button">Order Now</button>
-      </div>
-    </header>
-    <!-- Hero Oksana-->
-
+<body>
+  <!-- Header Ira-->
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo" href=""><img src="./img/Vector.svg" alt="logo" width="66" height="52" /></a>
+      <nav class="header-navigation">
+        <ul class="header-list list">
+          <li class="header-item header-flex">
+            <a class="header-link current-page link" href="">Home</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="">About</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="">Service</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="">Menu</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header-button" type="button" data-modal-open>Order Now</button>
+    </div>
+  </header>
+  
+  <!-- Hero Oksana-->
     <section class="hero-section">
       <div class="hero-container container">
         <div class="hero-content">
@@ -323,10 +320,52 @@
           </ul>
         </div>
       </div>
-    </section>
-    <!-- ss -->
-    <!-- Subscribe Sasha Bolych-->
-    <!-- Footer Nazar-->
-    <!-- Modal window Vlad -->
-  </body>
+    </div>
+  </section>
+<!-- ss -->
+  <!-- Subscribe Sasha Bolych-->
+  <!-- Footer Nazar-->
+    <!--! Modal window Vlad -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal"><button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-btn-icon" width="24" height="24">
+          <use href="./img/close-modal-window.svg"></use>
+        </svg>
+      </button>
+      <div class="modal-container">
+      <p class="form-title">Order Form</p>
+      <form action="" class="form-modal">
+        <label for="user-name"><p class="form-text">Name</p> 
+        <input
+         class="input-field"
+         type="text"
+         name="user-name"
+         id="user-name"
+         placeholder="Your name"
+         required minlength="3"
+         ></label>
+        <label for="user-phone"><p class="form-text">Phone number</p>
+        <input type="tel"
+        name="user-phone"
+        id="user-phone"
+        class="input-field"
+        placeholder="+38(0_ _) _ _ _   _ _   _ _"
+        required minlength="3"
+        ></label>
+        <label for="user-email"><p class="form-text">E-mail</p>
+        <input type="email"
+        name="user-email"
+        id="user-email"
+        class="input-field"
+        placeholder="example@gmail.com"
+        required
+        ></label><div class="container-button">
+        <button type="submit" class="button-send">
+          <p class="button-send-text">Send</p></button></div>
+      </form>
+      </div>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
 </html>

@@ -515,3 +515,121 @@ img {
 /* .customer-card-description {
 
 } */
+
+/*!------ MODAL WINDOW --------*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(94, 99, 99, 0.7);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 448px;
+  height: 449px;
+  background: var(--yellow-main);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+}
+
+.modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  top: 12px;
+  right: 12px;
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+.modal-container {
+  padding: 32px;
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.form-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+.input-field {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  outline: none;
+  padding-left: 12px;
+}
+.form-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2c2c2c;
+  padding-left: 12px;
+}
+
+.input-field:not(:placeholder-shown):required:valid {
+  border: 1px solid var(--darck-green);
+}
+.input-field:not(:placeholder-shown):required:invalid {
+  border: 1px solid #ff705d;
+}
+.input-field::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #c4c4c4;
+}
+.container-button {
+  display: flex;
+  justify-content: center;
+}
+.button-send-text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+.button-send {
+  background: #ffffff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  width: 106px;
+  height: 40px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-send:is(:hover, :focus) {
+  background-color: var(--button-green);
+}
