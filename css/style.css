@@ -558,6 +558,10 @@ img {
   padding: 0;
   border: none;
 }
+.modal-close-btn-icon{
+ fill: black;
+ 
+}
 
 button {
   cursor: pointer;
