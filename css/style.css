@@ -517,25 +517,17 @@ img {
 } */
 /* ==============================FOOOOOOTER NAZAR */
 /* ==============================FOOOOOOTER NAZAR */
-.footer {
-  width: 100%;
-  position: relative;
-  background-color: #ffffff;
-  z-index: -2;
-}
-.back-photo {
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  right: 16px;
-  width: 1211px;
-  height: 266px;
-}
+
 .footer-conteiner {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
   position: relative;
+  background-color: #ffffff;
+  background-image: url(../img/footer-back.jpg);
+  background-size: 1211px, 266px;
+  background-repeat: no-repeat;
+  background-position: 53px 129px;
 }
 .footer-nav {
   display: flex;
